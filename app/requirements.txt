@@ -1,0 +1,10 @@
+sqlalchemy
+psycopg2
+tenacity
+requests
+tweepy
+vaderSentiment
+pandas
+scikit-learn
+nltk
+statistics
