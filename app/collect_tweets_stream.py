@@ -3,18 +3,12 @@ import json
 import time
 import tenacity
 from tenacity import *
-#import postgres
 import requests
-import pandas as pd
-import tweepy
 import re
-import numpy as np
 import base64
 import nltk
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from typing import List,Dict, Any, Tuple
-import base64
-import requests
 from db.db_connection import PostgreSQLConnection
 from writers.tweet_writer import TweetWriter
 from writers.trending_writer import TrendingWriter
@@ -52,10 +46,6 @@ def create_url(query: str, tweet_fields: str, expansions: str) -> str:
         query, tweet_fields, expansions
     )
     return url
-    
-
-
-
 def bearer_oauth(r):
     """
     Method required by bearer token authentication.
