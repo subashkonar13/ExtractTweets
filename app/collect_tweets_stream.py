@@ -139,7 +139,7 @@ def connectUrl() -> Tuple[Dict[str, Any], Dict[str, str], str]:
     return trend_params, trend_headers, trend_url
 
 
-
+@retry(wait=wait_exponential(min=2, max=60), stop=stop_after_attempt(5))
 def extractData() -> None:
     """
     Extracts data from Twitter API and writes it to the database.
