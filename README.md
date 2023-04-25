@@ -16,7 +16,7 @@ This tutorial is intended for self learning and making use of Twitter client aut
 
 ## Configuration
 1. Make changes in the `credentials.json` to add the Twitter credentials.
-2. Add the keyword to be searched in Tweets `collect_tweets_stream.py`
+2. Add the keyword to be searched in Tweets `collect_tweets_stream.py` at **line 25**
 
 
 ## Execution
